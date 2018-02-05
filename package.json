@@ -1,6 +1,6 @@
 {
   "name": "jsincss-element-units",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An element unit plugin for jsincss",
   "main": "index.js",
   "scripts": {
