@@ -1,4 +1,4 @@
-module.exports = (selector, rule) => {
+function eunit(selector, rule) {
 
   return Array.from(document.querySelectorAll(selector))
 
