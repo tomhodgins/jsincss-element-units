@@ -30,8 +30,6 @@ export default (selector, rule) => {
 
       tag.setAttribute(`data-eunit-${attr}`, count)
       styles += `[data-eunit-${attr}="${count}"] { ${rule} }\n`
-      count++
-
       return styles
 
     }, '')
