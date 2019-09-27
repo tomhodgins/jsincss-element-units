@@ -15,7 +15,7 @@ module.exports = (selector, rule) => {
   const result = Array.from(document.querySelectorAll(selector))
     .reduce((output, tag, count) => {
       rule = rule.replace(
-        /(\d*\.?\d+)(?:\s*)(ew|eh|emin|emax)/gi,
+        /(\d*\.?\d+)(?:--)?(ew|eh|emin|emax)/gi,
         (match, number, unit) => features[unit](tag, number)
       )
       output.add.push({tag: tag, count: count})
